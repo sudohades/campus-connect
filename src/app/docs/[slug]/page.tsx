@@ -1,11 +1,15 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
-import { getDocBySlug } from "@/lib/docs";
+import { getDocBySlug, getAllSlugs } from "@/lib/docs";
 import { MarkdownRenderer } from "@/components/docs/MarkdownRenderer";
 import { TableOfContents } from "@/components/docs/TableOfContents";
 import { ReadingProgress } from "@/components/docs/ReadingProgress";
 import { BackToTop } from "@/components/docs/BackToTop";
+
+export function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const doc = getDocBySlug(params.slug);
