@@ -15,6 +15,10 @@ import {
   Bell,
   LayoutDashboard,
   Shield,
+  BookOpen,
+  FileText,
+  Play,
+  CheckSquare,
 } from "lucide-react";
 import { MOCK_USERS } from "@/data/users";
 import { currentState, resetAll, resetSlice } from "@/lib/state";
@@ -37,6 +41,13 @@ const QUICK_LINKS = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/chats", label: "Chats", icon: MessageSquare },
   { href: "/notifications", label: "Notifications", icon: Bell },
+];
+
+const DOC_LINKS = [
+  { href: "/docs", label: "Documentation", icon: BookOpen },
+  { href: "/docs/readme", label: "README", icon: FileText },
+  { href: "/docs/demo-guide", label: "Demo Guide", icon: Play },
+  { href: "/docs/requirements", label: "Requirements", icon: CheckSquare },
 ];
 
 export function DevConsole() {
@@ -130,6 +141,23 @@ export function DevConsole() {
             <Shield className="h-3 w-3" />
             Admin
           </Link>
+        </div>
+      </section>
+
+      {/* Documentation */}
+      <section className="mb-5 card rounded-2xl p-5">
+        <h2 className="mb-3.5 text-sm font-semibold text-neutral-100">Documentation</h2>
+        <div className="flex flex-wrap gap-2">
+          {DOC_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="btn-outline !px-3 !py-1.5 !text-xs !rounded-xl"
+            >
+              <link.icon className="h-3 w-3" />
+              {link.label}
+            </Link>
+          ))}
         </div>
       </section>
 

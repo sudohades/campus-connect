@@ -141,3 +141,109 @@
     @apply transition-all duration-200 ease-out;
   }
 }
+
+/* Markdown prose styles */
+.cc-markdown {
+  @apply text-neutral-300 leading-relaxed;
+}
+
+.cc-markdown > * + * {
+  @apply mt-5;
+}
+
+.cc-markdown h1 {
+  @apply mt-12 mb-4 text-2xl font-bold text-neutral-50 tracking-tight first:mt-0;
+}
+
+.cc-markdown h2 {
+  @apply mt-10 mb-3 pb-2 border-b border-neutral-800 text-xl font-semibold text-neutral-50 tracking-tight;
+}
+
+.cc-markdown h3 {
+  @apply mt-8 mb-2 text-lg font-semibold text-neutral-100 tracking-tight;
+}
+
+.cc-markdown h4 {
+  @apply mt-6 mb-2 text-base font-semibold text-neutral-200;
+}
+
+.cc-markdown h5,
+.cc-markdown h6 {
+  @apply mt-4 mb-1 text-sm font-semibold text-neutral-300;
+}
+
+.cc-markdown p {
+  @apply text-sm leading-relaxed;
+}
+
+.cc-markdown a {
+  @apply text-crimson-light underline underline-offset-2 decoration-crimson/30 transition-colors hover:text-crimson hover:decoration-crimson;
+}
+
+.cc-markdown strong {
+  @apply font-semibold text-neutral-100;
+}
+
+.cc-markdown em {
+  @apply italic;
+}
+
+.cc-markdown ul {
+  @apply my-4 ml-6 list-disc space-y-1.5;
+}
+
+.cc-markdown ol {
+  @apply my-4 ml-6 list-decimal space-y-1.5;
+}
+
+.cc-markdown li {
+  @apply text-sm;
+}
+
+.cc-markdown li input[type="checkbox"] {
+  @apply mr-2 rounded border-neutral-600 bg-surface text-crimson focus:ring-crimson/30;
+}
+
+.cc-markdown blockquote {
+  @apply my-6 border-l-2 border-crimson/40 pl-4 text-neutral-400 italic;
+}
+
+.cc-markdown blockquote p {
+  @apply text-sm;
+}
+
+.cc-markdown pre {
+  @apply my-6 overflow-x-auto rounded-lg border border-neutral-800 bg-surface-raised p-4 text-xs leading-relaxed;
+}
+
+.cc-markdown code {
+  @apply font-mono text-xs;
+}
+
+.cc-markdown :not(pre) > code {
+  @apply rounded border border-neutral-800 bg-surface-elevated px-1.5 py-0.5 text-crimson-light;
+}
+
+.cc-markdown table {
+  @apply w-full text-xs;
+}
+
+.cc-markdown thead {
+  @apply bg-surface-overlay;
+}
+
+.cc-markdown th {
+  @apply px-3 py-2.5 text-left font-medium text-neutral-300 border-b border-neutral-800;
+}
+
+.cc-markdown td {
+  @apply px-3 py-2.5 border-b border-neutral-800/50 text-neutral-400;
+}
+
+.cc-markdown tbody tr {
+  @apply transition-colors hover:bg-surface-elevated/50;
+}
+
+.cc-markdown hr {
+  @apply my-8 border-neutral-800;
+}
