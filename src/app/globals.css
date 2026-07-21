@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-neutral-300;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  * {
+    @apply border-neutral-800;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight text-neutral-50;
+  }
+
+  input, textarea, select {
+    @apply transition-all duration-150;
+  }
+}
+
+@layer components {
+  .btn-crimson {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-crimson px-4 py-2.5 text-sm font-medium text-white shadow-soft transition-all duration-150 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-crimson:hover {
+    background-color: #7a1a1a;
+    @apply shadow-medium;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gold px-4 py-2.5 text-sm font-medium text-neutral-950 shadow-soft transition-all duration-150 active:scale-[0.98];
+  }
+  .btn-gold:hover {
+    background-color: #c49436;
+    @apply shadow-medium;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-700 bg-transparent px-4 py-2.5 text-sm font-medium text-neutral-300 shadow-soft transition-all duration-150 hover:bg-surface-elevated hover:border-neutral-600 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-neutral-400 transition-all duration-150 hover:bg-surface-elevated hover:text-neutral-200;
+  }
+
+  .card {
+    @apply rounded-xl border border-neutral-800 bg-surface-raised p-4 shadow-soft transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-card-hover hover:border-neutral-700 hover:-translate-y-0.5;
+  }
+
+  .glass {
+    background: rgba(17, 17, 19, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-neutral-700 bg-surface px-3.5 py-2.5 text-sm text-neutral-100 outline-none placeholder:text-neutral-500 transition-all duration-150;
+  }
+  .input-field:focus {
+    border-color: rgba(139, 30, 30, 0.5);
+    box-shadow: 0 0 0 3px rgba(139, 30, 30, 0.15);
+  }
+
+  .select-field {
+    @apply w-full rounded-lg border border-neutral-700 bg-surface px-3.5 py-2.5 text-sm text-neutral-100 outline-none transition-all duration-150;
+  }
+  .select-field:focus {
+    border-color: rgba(139, 30, 30, 0.5);
+    box-shadow: 0 0 0 3px rgba(139, 30, 30, 0.15);
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-neutral-50 tracking-tight;
+  }
+
+  .page-title {
+    @apply text-xl font-semibold text-neutral-50 tracking-tight;
+  }
+
+  .subtitle {
+    @apply text-sm text-neutral-400;
+  }
+
+  .badge-gold {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+    background-color: rgba(217, 164, 65, 0.12);
+    color: #e8bc6a;
+  }
+
+  .badge-crimson {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+    background-color: rgba(139, 30, 30, 0.15);
+    color: #e06060;
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(90deg, transparent 25%, rgba(255,255,255,0.06) 50%, transparent 75%);
+    background-size: 200% 100%;
+  }
+}
+
+@layer utilities {
+  .text-gradient-crimson {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #8B1E1E 0%, #b82e2e 100%);
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #D9A441 0%, #e8bc6a 100%);
+  }
+
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 40% 20%, rgba(139,30,30,0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(217,164,65,0.06) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(139,30,30,0.05) 0px, transparent 50%);
+  }
+
+  .bg-glow {
+    background-image: radial-gradient(ellipse at 50% 0%, rgba(139,30,30,0.12) 0%, transparent 70%);
+  }
+
+  .transition-default {
+    @apply transition-all duration-200 ease-out;
+  }
+}
