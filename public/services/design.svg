@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g transform="translate(200,108)" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-50" y="-40" width="100" height="75" rx="5" fill="rgba(255,255,255,0.1)"/>
+    <circle cx="-30" cy="-20" r="8" fill="rgba(255,255,255,0.2)"/>
+    <circle cx="-30" cy="-20" r="3" fill="rgba(255,255,255,0.3)"/>
+    <rect x="-15" y="-25" width="50" height="5" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="-15" y="-16" width="35" height="3" rx="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="-40" y="5" width="80" height="20" rx="3" fill="rgba(255,255,255,0.08)"/>
+    <line x1="-30" y1="12" x2="30" y2="12" stroke="rgba(255,255,255,0.3)"/>
+    <line x1="-30" y1="19" x2="20" y2="19" stroke="rgba(255,255,255,0.25)"/>
+    <rect x="25" y="-35" width="18" height="18" rx="3" fill="rgba(255,255,255,0.15)"/>
+    <text x="34" y="-22" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">AI</text>
+  </g>
+  <text x="200" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="white">Poster &amp; Design</text>
+  <text x="200" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">Presentations &amp; Flyers</text>
+  <rect x="20" y="20" width="55" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="47" y="36" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="white">Design</text>
+</svg>

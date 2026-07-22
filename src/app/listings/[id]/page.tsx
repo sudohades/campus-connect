@@ -107,8 +107,16 @@ export default function ListingDetailPage() {
 
   return (
     <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-2 animate-fade-in">
-      <div className="flex aspect-square items-center justify-center rounded-2xl bg-gradient-to-br from-surface-elevated to-surface-overlay text-sm text-neutral-500 font-medium border border-neutral-800">
-        {listing.title}
+      <div className="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-surface-elevated to-surface-overlay text-sm text-neutral-500 font-medium border border-neutral-800">
+        {listing.images[0] ? (
+          <img
+            src={listing.images[0]}
+            alt={listing.title}
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          listing.title
+        )}
       </div>
 
       <div>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g transform="translate(200,105)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-28" y="-55" width="56" height="110" rx="6" fill="rgba(255,255,255,0.1)"/>
+    <rect x="-22" y="-48" width="44" height="22" rx="3" fill="rgba(255,255,255,0.15)"/>
+    <text x="0" y="-32" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.6)">fx-991</text>
+    <line x1="-18" y1="-20" x2="-6" y2="-20"/>
+    <line x1="6" y1="-20" x2="18" y2="-20"/>
+    <line x1="-18" y1="-10" x2="-6" y2="-10"/>
+    <line x1="6" y1="-10" x2="18" y2="-10"/>
+    <line x1="-18" y1="0" x2="-6" y2="0"/>
+    <line x1="6" y1="0" x2="18" y2="0"/>
+    <line x1="-18" y1="10" x2="-6" y2="10"/>
+    <line x1="6" y1="10" x2="18" y2="10"/>
+    <line x1="-18" y1="20" x2="18" y2="20"/>
+    <rect x="-18" y="25" width="36" height="18" rx="3" fill="rgba(255,255,255,0.2)"/>
+    <circle cx="-12" cy="-20" r="1.5" fill="white"/>
+    <circle cx="12" cy="-20" r="1.5" fill="white"/>
+    <circle cx="-12" cy="-10" r="1.5" fill="white"/>
+    <circle cx="12" cy="-10" r="1.5" fill="white"/>
+    <circle cx="-12" cy="0" r="1.5" fill="white"/>
+    <circle cx="12" cy="0" r="1.5" fill="white"/>
+    <circle cx="-12" cy="10" r="1.5" fill="white"/>
+    <circle cx="12" cy="10" r="1.5" fill="white"/>
+  </g>
+  <text x="200" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="white">Casio FX-991</text>
+  <text x="200" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">Scientific Calculator</text>
+  <rect x="20" y="20" width="60" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="50" y="36" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="white">Electronics</text>
+</svg>

@@ -16,7 +16,15 @@ export function ServiceCard({ service }: { service: Service }) {
       className="group flex flex-col overflow-hidden rounded-xl border border-neutral-800 bg-surface-raised shadow-soft transition-all duration-200 hover:shadow-card-hover hover:border-neutral-700 hover:-translate-y-0.5"
     >
       <div className="flex aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-surface-overlay to-neutral-800 text-xs text-neutral-400 font-medium relative overflow-hidden">
-        <span className="relative z-10">{service.title}</span>
+        {service.images[0] ? (
+          <img
+            src={service.images[0]}
+            alt={service.title}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <span className="relative z-10">{service.title}</span>
+        )}
         <div className="absolute inset-0 bg-gradient-to-br from-crimson/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       <div className="flex flex-1 flex-col gap-1.5 p-3.5">

@@ -92,9 +92,19 @@ export default function ServiceDetailPage() {
 
   return (
     <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 px-4 py-8 md:grid-cols-2 animate-fade-in">
-      <div className="flex aspect-square items-center justify-center rounded-2xl bg-gradient-to-br from-surface-overlay to-neutral-800 text-sm text-neutral-400 font-medium border border-neutral-800 relative overflow-hidden">
-        <span className="relative z-10">{service.title}</span>
-        <div className="absolute inset-0 bg-gradient-to-br from-crimson/8 to-transparent" />
+      <div className="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-surface-overlay to-neutral-800 text-sm text-neutral-400 font-medium border border-neutral-800 relative">
+        {service.images[0] ? (
+          <img
+            src={service.images[0]}
+            alt={service.title}
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <>
+            <span className="relative z-10">{service.title}</span>
+            <div className="absolute inset-0 bg-gradient-to-br from-crimson/8 to-transparent" />
+          </>
+        )}
       </div>
 
       <div>

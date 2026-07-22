@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#78350f"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g transform="translate(200,115)" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-60" y="-30" width="120" height="8" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <line x1="-55" y1="-22" x2="-55" y2="30"/>
+    <line x1="55" y1="-22" x2="55" y2="30"/>
+    <rect x="30" y="-22" width="25" height="20" rx="2" fill="rgba(255,255,255,0.1)"/>
+    <line x1="30" y1="-12" x2="55" y2="-12"/>
+    <rect x="33" y="-8" width="19" height="5" rx="1" fill="rgba(255,255,255,0.15)"/>
+    <rect x="-50" y="-45" width="35" height="15" rx="2" fill="rgba(255,255,255,0.1)"/>
+    <rect x="-45" y="-42" width="25" height="9" rx="1" fill="rgba(255,255,255,0.15)"/>
+    <line x1="-15" y1="-30" x2="-15" y2="-22"/>
+  </g>
+  <text x="200" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="white">Study Desk</text>
+  <text x="200" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">Compact with Drawer</text>
+  <rect x="20" y="20" width="65" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="52" y="36" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="500" fill="white">Furniture</text>
+</svg>
