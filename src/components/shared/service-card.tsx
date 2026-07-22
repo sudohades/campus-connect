@@ -25,7 +25,6 @@ export function ServiceCard({ service }: { service: Service }) {
         ) : (
           <span className="relative z-10">{service.title}</span>
         )}
-        <div className="absolute inset-0 bg-gradient-to-br from-crimson/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       <div className="flex flex-1 flex-col gap-1.5 p-3.5">
         <h3 className="line-clamp-2 text-sm font-medium text-neutral-100 group-hover:text-crimson-light transition-colors duration-150">
